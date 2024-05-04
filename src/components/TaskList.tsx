@@ -25,7 +25,7 @@ export default function TaskList() {
 
   return (
     <div>
-      <div className="flex gap-4 pb-4 w-1/2 mx-auto">
+      <div className="flex gap-4 pb-4 w-1/2 mx-2 md:mx-auto flex-wrap">
         <button
           onClick={() => setStatus("All")}
           className={`border p-2 rounded font-semibold   ${
@@ -58,7 +58,7 @@ export default function TaskList() {
         </button>
       </div>
 
-      <div className="flex flex-col gap-2 w-1/2 mx-auto">
+      <div className="flex flex-col gap-2 w-1/2 mx-2 md:mx-auto">
         {filteredTasks?.map((task) => (
           <div
             key={task.id}

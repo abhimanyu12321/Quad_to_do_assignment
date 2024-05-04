@@ -11,8 +11,8 @@ const Home = () => {
   };
 
   return (
-    <div className="container mx-auto px-6 bg-gray-950 py-4 min-h-[100vh]">
-      <div className="bg-gray-300 py-4   text-black  rounded flex items-center justify-between px-2">
+    <div className="w-[100vw] mx-auto px-6 bg-gray-950 py-4 min-h-[100vh] ">
+      <div className="bg-gray-300 py-4  w-[80%] text-black  rounded flex items-center justify-between px-2">
         <h2 className="text-2xl">Todo App</h2>
         <button
           onClick={handleLogout}

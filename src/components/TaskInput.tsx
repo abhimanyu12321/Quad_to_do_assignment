@@ -31,23 +31,23 @@ export default function TaskInput() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full flex flex-col py-6">
+    <form onSubmit={handleSubmit} className="w-[80%] flex flex-col py-6">
       <div className="flex flex-col gap-4">
-        <div className="flex gap-4 w-1/2 mx-auto">
-          <label className="py-2 text-lg font-medium text-white ">
-            Task title :
+        <div className="flex gap-4 w-1/2 mx-2 md:mx-auto">
+          <label className=" text-md md:text-lg font-medium text-white ">
+            Task title
           </label>
           <input
             placeholder="Enter a todo title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="border outline-none flex-1 p-2 rounded border-gray-300 "
+            className="border outline-none p-2 rounded border-gray-300 "
           />
         </div>
 
-        <div className="flex gap-4 w-1/2 mx-auto">
-          <label className="py-2 text-lg font-medium text-white ">
-            Priority :
+        <div className="flex gap-4 w-1/2 mx-2 md:mx-auto">
+          <label className="text-md md:text-lg font-medium text-white ">
+            Priority
           </label>
           <select
             value={priority}
@@ -62,7 +62,7 @@ export default function TaskInput() {
           </select>
         </div>
 
-        <button className="border  rounded p-2 bg-[rgb(15,16,16)] text-white w-1/2 mx-auto">
+        <button className="border  rounded p-2 bg-[rgb(15,16,16)] text-white w-1/2 mx-2 md:mx-auto">
           Save
         </button>
       </div>
